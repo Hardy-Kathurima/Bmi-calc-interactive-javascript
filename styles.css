@@ -1,0 +1,66 @@
+.jumbotron {
+  background-color: rgb(39, 34, 28);
+  padding: 5vh 0;
+  text-align: center;
+  color: white;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  box-shadow: none !important;
+}
+/* valid class to apply on valid input */
+.valid {
+  border-color: #36cc36;
+}
+/* valid class to apply on invalid input */
+.invalid {
+  border-color: red;
+}
+/* styling the validation text */
+input + p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 10px;
+  color: red;
+  opacity: 0;
+  height: 0;
+}
+
+input.invalid + p {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 20px;
+}
+/* centering the card */
+.col-center {
+  float: none;
+  margin: 0 auto;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.results h5 {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  width: 100%;
+}

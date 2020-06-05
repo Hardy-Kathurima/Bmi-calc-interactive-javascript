@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Interactive Js BMI calculator</title>
+</head>
+
+<body>
+  <div class=" jumbotron jumbotron-fluid">
+    <nav>
+
+      <h1 class="display-6">BMI CALCULATOR</h1>
+      <p class="lead">Calculate your BMI and get a perfect recommendation.</p>
+      <!-- contact links -->
+      <div class="container">
+
+        <a style="padding: 5px;" href="https://www.linkedin.com/in/hardy-kathurima-179310186/"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a style="padding: 5px;" href="https://github.com/Hardy-Kathurima"><i class="fab fa-github"></i></a>
+        <a style="padding: 5px;" href="https://www.hardykathurima@gmail.com"><i class="fas fa-envelope"></i></i></a>
+        <a style="padding: 5px;" href="https://t.me/Kranium67"><i class="fab fa-telegram"></i></a>
+
+      </div>
+      <!-- end here contacts -->
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h5>How it works</h5>
+        <p class="lead">Body mass index is a simple calculation using a person's height and weight.The formula
+          is <var>BMI</var>=<var>kg</var><var>/</var><var>m</var><var><sup>2</sup></var> where <var>kg</var> is a
+          person's weight in kilograms and <var>m</var><var><sup>2</sup></var>is their height in meters squared.</p>
+        <p class="lead">A BMI of 25.0 or more is overweight,while the healthy range is 18.5 to 24.9.BMI applies to most
+          adults 18-65
+          years.</p>
+      </div>
+      <div class="col-md-6">
+        <!-- putting whole form in card -->
+        <div class="card card-body">
+          <h5 class="card-title d-flex justify-content-center">BMI CALCULATOR</h5>
+
+          <form id="bmi-calc" class="form-group" action="">
+            
+
+            <input name="weight" type="text" id="std-weight" placeholder="Please enter your weight in kgs">
+            <!-- condition for validation using regex -->
+            <p>weight should not be more than 999kg </p>
+
+
+
+
+            <input name="height" type="text" id="std-height" placeholder="Please enter your height in meters">
+            <!-- condition for validation using regex -->
+            <p>Height should be in meters and 2dp between 1.00m-2.99m </p>
+
+
+
+
+            <input class="btn-dark mt-3 " type="submit" value="Calculate">
+          </form>
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-6 col-center">
+          <div class="card shadow card-body bg-warning results">
+            <h5>Results</h5>
+            <div class="recommend">
+              <div class="outcome-div pt-3">
+                <p class="bmi"></p>
+                <p class="status"></p>
+              </div>
+              <div>
+                <h6 class="remedy"></h6>
+                <p class=" lead recommendations"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>&copy Hardy 2015-2020</footer>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
